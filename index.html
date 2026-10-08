@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Moonlit Hub</title>
+<style>
+:root{--bg:#0a1330;--gold:#d9a84e;--text:#f1e9d8;--muted:#a9b0c4}
+*{box-sizing:border-box}
+html{height:100%}
+body{margin:0;min-height:100%;background:radial-gradient(ellipse at top,#16224d,var(--bg) 70%);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column;align-items:center;text-align:center;padding:32px 20px}
+main{max-width:520px;width:100%;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+img{max-width:100%;width:260px;border-radius:16px}
+h1{font-size:2rem;margin:20px 0 8px;color:var(--gold)}
+p{color:var(--muted);line-height:1.6;margin:0 0 24px}
+.btn{display:inline-block;background:linear-gradient(135deg,#e6bb66,#b9822e);color:#1a1205;font-weight:700;font-size:1.1rem;text-decoration:none;padding:16px 36px;border-radius:999px;box-shadow:0 6px 24px rgba(217,168,78,.35)}
+.btn:active{transform:scale(.98)}
+.steps{display:grid;gap:12px;margin-top:40px;width:100%;text-align:left}
+.step{background:rgba(255,255,255,.05);border:1px solid rgba(217,168,78,.25);border-radius:12px;padding:14px 16px;font-size:.95rem}
+.step b{color:var(--gold)}
+footer{margin-top:32px;font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <img src="logo.png" alt="Moonlit Hub logo">
+  <h1>Welcome to Moonlit Hub</h1>
+  <p>Everything happens on Telegram. Tap the button below to open our chat and get started.</p>
+  <a class="btn" href="https://t.me/moonlithub">Continue on Telegram</a>
+  <div class="steps">
+    <div class="step"><b>1.</b> Tap “Continue on Telegram”</div>
+    <div class="step"><b>2.</b> Telegram opens on @moonlithub</div>
+  </div>
+</main>
+<footer>&copy; Moonlit Hub</footer>
+</body>
+</html>

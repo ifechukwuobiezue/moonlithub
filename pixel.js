@@ -7,12 +7,14 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '982698490858002');
 fbq('track', 'PageView');
 
-// Fire "Contact" on every link click
-document.querySelectorAll('a').forEach(function (link) {
-  link.addEventListener('click', function () {
+// Global click delegation: fires "Contact" whenever any link or button is clicked
+document.addEventListener('click', function (e) {
+  var target = e.target.closest('a, button');
+  if (target) {
     fbq('track', 'Contact');
-  });
+  }
 });
